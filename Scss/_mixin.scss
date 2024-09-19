@@ -1,0 +1,18 @@
+@mixin button($bg-color) {
+  padding: 1.5rem 3rem;
+  border: none;
+  font-size: $fs-17;
+  font-weight: $fw-500;
+  background-color: $bg-color;
+  border-radius: 5rem;
+  border: 2px solid transparent;
+}
+
+@mixin button-mobile($bg-color) {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  font-size: $fs-16;
+  font-weight: $fw-500;
+  background-color: $bg-color;
+  border-radius: 5rem;
+}

@@ -1,0 +1,50 @@
+// utility clasess
+
+// Font Family
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+// Color Theme
+
+$white-color: #fff;
+$orange-color: #eb5757;
+$red-color: #ff1a1a;
+$green-color: #1aff7c;
+$black-color: #000;
+$grey-color: #4f4f4f;
+$blue-color: #1b004e;
+$footer-grey-color: #e6e6e6;
+$hero-gradiant-color: linear-gradient(227deg, #4e0062 0.43%, #220076 99.56%);
+$footer-grandiant-color: linear-gradient(227deg, #4e0062 0.43%, #220076 99.56%);
+
+// Font weight
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+// Font Sizes
+
+$fs-11: 1.1rem;
+$fs-12: 1.2rem;
+$fs-13: 1.3rem;
+$fs-14: 1.4rem;
+$fs-15: 1.5rem;
+$fs-16: 1.6rem;
+$fs-17: 1.7rem;
+$fs-18: 1.8rem;
+$fs-20: 2rem;
+$fs-24: 2.4rem;
+$fs-32: 3.2rem;
+$fs-50: 5rem;
+$fs-60: 6rem;

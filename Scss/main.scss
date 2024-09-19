@@ -1,0 +1,632 @@
+@import "./variable";
+@import "./mixin";
+
+html {
+  font-size: 62.5%;
+}
+
+// Backgrounds
+.background-gradiant-header-hero-parent {
+  background: $blue-color;
+}
+
+.background-gradiant-header-hero {
+  background: url(../images/bg-hero.png) no-repeat center;
+  background-size: cover;
+}
+
+// Header Start
+
+header {
+  padding-top: 2rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $white-color;
+  &:hover {
+    color: $white-color;
+  }
+  &:focus {
+    color: $green-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.navbar-nav {
+  gap: 2rem;
+  text-align: center;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: $fs-17;
+}
+
+.button {
+  @include button(transparent);
+  color: white;
+  border: 2px solid $orange-color;
+  &:hover{
+    background-color: $orange-color;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+// Hero Start
+
+.hero-parent {
+  padding-block: 6rem 10rem;
+  .hero-content {
+    h1 {
+      font-size: $fs-60;
+      line-height: 6.4rem;
+      font-weight: $fw-700;
+    }
+    p {
+      max-width: 480px;
+      font-size: $fs-17;
+      padding-block: 2rem 2.5rem;
+      line-height: 2.1rem;
+    }
+    button {
+      @include button($orange-color);
+      color: $white-color;
+      &:hover{
+        border: 2px solid $orange-color;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.bottom-img {
+  position: relative;
+  .col-lg-12 {
+    img {
+      position: absolute;
+      top: 0%;
+      right: 52%;
+    }
+  }
+}
+
+// Cryptocurrency Prices
+
+.cryptocurrency-section {
+  padding-block: 9.5rem 11rem;
+}
+
+.table-heading {
+  h3 {
+    font-size: $fs-32;
+    margin-top: 9.5rem;
+    font-weight: $fw-700;
+    color: $white-color;
+    padding-bottom: 6rem;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+}
+
+th {
+  padding-block: 0.8rem 2rem;
+  padding-inline: 3rem;
+  margin: 0 auto;
+  text-align: left;
+  font-size: $fs-14;
+  text-transform: capitalize;
+}
+
+tr td:first-child {
+  font-family: "Open Sans", sans-serif;
+  padding-right: 0 !important;
+  .star {
+    padding-right: 1.2rem;
+    font-size: $fs-12;
+  }
+  .currency-icon {
+    padding-inline: 3.4rem 1rem;
+  }
+  .currency-name {
+    font-size: $fs-13;
+    margin-right: 0.5rem;
+  }
+  .currency-sub-name {
+    font-size: $fs-11;
+    color: #828282;
+  }
+}
+
+.up-arrow-left-mar {
+  margin-right: 0.5rem;
+}
+
+.volumn-gap {
+  gap: 1rem;
+}
+
+.mar-left-auto {
+  padding-left: 7rem;
+  color: #828282;
+  font-size: $fs-11;
+}
+
+td {
+  font-size: $fs-14;
+  padding: 1.5rem;
+
+  text-align: left;
+}
+
+th {
+  border-top: 0.6px solid #bdbdbd;
+  border-bottom: 0.6px solid #bdbdbd;
+}
+
+tr {
+  border-bottom: 0.6px solid #bdbdbd;
+}
+
+// Cryptocurrency Prices Mobile
+
+.cryptocurrency-section {
+  padding-block: 0rem 5rem;
+}
+
+.table-heading-mobile {
+  h3 {
+    font-size: $fs-20;
+    font-weight: $fw-700;
+    color: $white-color;
+    padding-bottom: 3rem;
+  }
+}
+
+.mobile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mobile-table-head {
+  th {
+    padding-inline: 0rem;
+    border-top: none;
+    padding-block: 0rem 2rem;
+  }
+}
+
+.mobile-table-data {
+  td {
+    margin-block: 2rem 0.9rem;
+    padding: 0;
+  }
+}
+
+.mobile-currency-icon {
+  margin-right: 1rem;
+}
+
+.mobile-currency-name {
+  font-size: $fs-13;
+}
+
+.mobile-sub {
+  color: #828282;
+  font-size: $fs-11;
+  padding-left: 0.5rem;
+}
+
+// The Most Trusted Cryptocurrency Platform Section
+
+.most-tructed-section {
+  padding-block: 9rem 11rem;
+  color: $black-color;
+}
+
+.most-trusted-heading {
+  color: $black-color;
+  font-size: $fs-32;
+  font-weight: $fw-700;
+  padding-bottom: 6rem;
+}
+
+.ease-card {
+  h4 {
+    font-size: $fs-24;
+    font-weight: $fw-600;
+    padding-block: 4.5rem 3rem;
+  }
+  ul {
+    .pad-blk-30 {
+      padding-block: 3rem;
+    }
+    li {
+      font-size: $fs-17;
+    }
+  }
+}
+
+// Download Crypto
+
+.download-crypto-section {
+  padding-block: 10rem;
+  background-color: $blue-color;
+}
+
+.download-crypto-content {
+  padding-right: 12rem;
+  .poppins {
+    max-width: 450px;
+    font-size: $fs-32;
+    line-height: 3.6rem;
+    font-weight: $fw-700;
+    color: $white-color;
+  }
+  .inter {
+    font-size: $fs-17;
+    line-height: 2.1rem;
+    padding-block: 1.4rem 5rem;
+    color: $white-color;
+  }
+  .apps-gap {
+    gap: 3rem;
+  }
+}
+// Learn to thrive
+
+.learn-section {
+  padding-block: 10rem 11rem;
+}
+
+.learn-heading {
+  padding-bottom: 4.6rem;
+  font-size: $fs-32;
+  font-weight: $fw-600;
+  color: $black-color;
+}
+
+.learn-card {
+  max-width: 368px;
+  max-height: 412.826px;
+  color: $black-color;
+  border-radius: 10px;
+  background-color: $white-color;
+  box-shadow: 0px 4px 8px 0px rgba(203, 203, 203, 0.25);
+  .card-content {
+    padding: 2.4rem 1.9rem 2.4rem 1.9rem;
+    .poppins {
+      font-size: $fs-16;
+      font-weight: $fw-500;
+      line-height: 2rem;
+      padding-block: 0rem 1.3rem;
+    }
+    .open-sans {
+      color: #4f4f4f;
+      font-size: $fs-14;
+      line-height: 1.8rem;
+      padding-block: 0rem 2.8rem;
+    }
+  }
+}
+
+.mar-left-5 {
+  margin-left: 0.5rem;
+}
+
+// Never miss a drop
+
+.never-bg {
+  background-color: $blue-color;
+  padding-block: 9.2rem 11rem;
+}
+
+.never-content {
+  text-align: center;
+  .poppins {
+    font-size: $fs-50;
+    font-weight: $fw-700;
+  }
+  .inter {
+    font-size: $fs-24;
+    padding-block: 1rem 5rem;
+  }
+  .never-form {
+    display: inline-block;
+    padding: 0.4rem 0.5rem 0.4rem 2.15rem;
+    border-radius: 37px;
+    border: 2px solid var(--White, #fff);
+    input {
+      background: none;
+      border: none;
+      color: $white-color;
+      outline: none;
+      font-size: $fs-15;
+      font-family: "Inter", sans-serif;
+      &::placeholder {
+        color: $white-color;
+      }
+    }
+    button {
+      margin-left: 20rem;
+      padding: 1.9rem 2.65rem;
+      border: none;
+      font-size: $fs-17;
+      font-weight: $fw-500;
+      background-color: $orange-color;
+      border-radius: 5rem;
+      color: $white-color;
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  background: $footer-grandiant-color;
+  padding-block: 8rem 5.8rem;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-one {
+  h2 {
+    font-size: $fs-18;
+    font-weight: $fw-600;
+    margin-bottom: 3.2rem;
+  }
+  ul {
+    li {
+      color: $footer-grey-color;
+      font-size: $fs-16;
+      font-weight: $fw-400;
+      cursor: pointer;
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
+  .link-li-gap {
+    gap: 3rem;
+  }
+}
+
+.hr-line {
+  margin-block: 6rem 3.6rem;
+}
+
+.copy-right {
+  font-size: $fs-14;
+  color: $footer-grey-color;
+}
+
+.soical-linkgap {
+  gap: 1.7rem;
+  div {
+    border: 1.5px solid $footer-grey-color;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    &:hover {
+      background-color: $orange-color;
+      border: 1.5px solid $orange-color;
+    }
+    &:hover .fa-brands {
+      color: white;
+    }
+  }
+}
+
+.fa-brands {
+  color: #616161;
+}
+
+// Media Query
+
+@media (max-width: 991px) {
+  .container {
+    padding-inline: 1.6rem !important;
+  }
+
+  // Hero section
+
+  .navbar {
+    padding: 0;
+  }
+
+  .background-gradiant-header-hero {
+    background: none;
+  }
+
+  .hero-parent {
+    padding-block: 4.8rem 5rem;
+    .hero-content {
+      h1 {
+        font-size: $fs-24;
+        line-height: 2.8rem;
+        text-align: center;
+      }
+      p {
+        font-size: $fs-16;
+        padding-block: 1.3rem 2rem;
+        line-height: 2rem;
+        text-align: center;
+      }
+      button {
+        @include button-mobile($orange-color);
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
+  // The Most Trusted Cryptocurrency Platform Section
+
+  .most-tructed-section {
+    padding-block: 5rem;
+  }
+
+  .most-trusted-heading {
+    font-size: $fs-20;
+    padding-bottom: 3rem;
+  }
+
+  .gap-trusted {
+    gap: 5rem;
+  }
+
+  .ease-card {
+    text-align: center;
+
+    h4 {
+      font-size: $fs-18;
+      padding-block: 3rem 2rem;
+    }
+    ul {
+      .pad-blk-30 {
+        padding-block: 1.5rem;
+      }
+      li {
+        font-size: $fs-14;
+      }
+    }
+  }
+
+  // Download Crypto
+
+  .download-crypto-section {
+    padding-block: 5rem;
+  }
+
+  .download-crypto-content {
+    text-align: center;
+    padding: 0rem;
+    .poppins {
+      font-size: $fs-20;
+      line-height: 2.4rem;
+    }
+    .inter {
+      font-size: $fs-14;
+      line-height: 1.8;
+      padding-block: 1rem 3rem;
+    }
+    img {
+      padding-bottom: 3rem;
+    }
+    .apps-gap {
+      gap: 3rem;
+    }
+  }
+
+  // Learn to thrive
+
+  .learn-section {
+    padding-block: 3.5rem;
+  }
+
+  .learn-heading {
+    padding-bottom: 5rem;
+    font-size: $fs-32;
+    font-weight: $fw-600;
+    color: $black-color;
+  }
+
+  .learn-gap {
+    gap: 3.6rem;
+  }
+
+  .learn-card {
+    max-width: 100%;
+    max-height: 100%;
+    .card-content {
+      padding: 2.4rem 6.4rem 2.4rem 6.4rem;
+    }
+  }
+
+  .mar-left-5 {
+    margin-left: 0.5rem;
+  }
+  // Never miss a drop
+
+  .never-bg {
+    background-color: $blue-color;
+    padding-block: 5rem 5.5rem;
+  }
+
+  .never-content {
+    padding: 0;
+    .poppins {
+      font-size: $fs-24;
+    }
+    .inter {
+      font-size: $fs-14;
+      padding-block: 1rem 3rem;
+    }
+
+    .never-form {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.4rem 0.4rem 0.4rem 1.6rem;
+
+      input {
+        font-size: $fs-12;
+      }
+      button {
+        margin-left: 0rem;
+        padding: 1.3rem 3.4rem;
+        font-size: $fs-14;
+      }
+    }
+  }
+
+  // Footer
+
+  .footer-links {
+    gap: 4rem;
+  }
+
+  .footer {
+    padding-block: 2.8rem 6.4rem;
+  }
+
+  .footer-one {
+    h2 {
+      margin-bottom: 2rem;
+    }
+    ul {
+      li {
+        font-size: $fs-14;
+      }
+    }
+    .link-li-gap {
+      gap: 2rem;
+    }
+  }
+
+  .hr-line {
+    margin-block: 3.2rem 2.6rem;
+  }
+
+  .soical-linkgap {
+    div {
+      padding: 1.4rem;
+    }
+  }
+
+  .soical-icon-gap-mobile {
+    gap: 2.6rem;
+  }
+}
