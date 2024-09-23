@@ -302,11 +302,23 @@ tr {
 
 .learn-card {
   max-width: 368px;
-  max-height: 412.826px;
+  // max-height: 412.826px;
   color: $black-color;
   border-radius: 10px;
   background-color: $white-color;
   box-shadow: 0px 4px 8px 0px rgba(203, 203, 203, 0.25);
+  &:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+  &:hover img{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+  }
+  img{
+    opacity: 0.6;
+  }
   .card-content {
     padding: 2.4rem 1.9rem 2.4rem 1.9rem;
     .poppins {
@@ -423,6 +435,7 @@ tr {
     &:hover {
       background-color: $orange-color;
       border: 1.5px solid $orange-color;
+      cursor: pointer;
     }
     &:hover .fa-brands {
       color: white;
@@ -432,13 +445,14 @@ tr {
 
 .fa-brands {
   color: #616161;
+  
 }
 
 // Media Query
 
 @media (max-width: 991px) {
   .container {
-    padding-inline: 1.6rem !important;
+    padding-inline: 2.4rem !important;
   }
 
   // Hero section
@@ -549,10 +563,9 @@ tr {
   }
 
   .learn-card {
-    max-width: 100%;
-    max-height: 100%;
+
     .card-content {
-      padding: 2.4rem 6.4rem 2.4rem 6.4rem;
+      padding: 2.4rem 2.4rem 2.4rem 2.4rem;
     }
   }
 
